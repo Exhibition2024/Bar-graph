@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rubik's Cube Solving Methods Algorithms</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 20px;
+              background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+          }
+          h1 {
+              text-align: center;
+          }
+          .chart-container {
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              height: 400px; /* Decreased height */
+              margin-top: 20px;
+          }
+          .bar {
+              fill: steelblue;
+              margin: 0 5px;
+          }
+          .metha-bar {
+              fill: blue; /* Metha bar color */
+          }
+          .axis {
+              font: 14px sans-serif;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Rubik's Cube Solving Methods Algorithms</h1>
+      <div class="chart-container">
+          <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(50,20)">
+                  <g class="axis axis--x" transform="translate(0,300)">
+                      <text x="0" y="20" class="axis--x">Methods</text>
+                      <text x="100" y="20" class="axis--x">ZZ</text>
+                      <text x="200" y="20" class="axis--x">Roux</text>
+                      <text x="300" y="20" class="axis--x">Metha</text>
+                      <text x="400" y="20" class="axis--x">Beginners</text>
+                      <text x="500" y="20" class="axis--x">PCBM</text>
+                  </g>
+                  <g class="axis axis--y">
+                      <text class="axis--y" x="-40" y="300">Algorithms</text>
+                      <text class="axis--y" x="-40" y="250">4</text>
+                      <text class="axis--y" x="-40" y="200">6</text>
+                      <text class="axis--y" x="-40" y="150">8</text>
+                      <text class="axis--y" x="-40" y="100">10</text>
+                      <text class="axis--y" x="-40" y="50">493</text>
+                  </g>
+                  <rect class="bar" x="100" y="50" width="50" height="250" /> <!-- ZZ aligned with 493 -->
+                  <rect class="bar" x="200" y="100" width="50" height="200" /> <!-- Roux aligned with 10 -->
+                  <rect class="metha-bar" x="300" y="100" width="50" height="200" /> <!-- Metha shortened between 8 and 10 -->
+                  <rect class="bar" x="400" y="250" width="50" height="50" /> <!-- Beginners aligned with 4 -->
+                  <rect class="bar" x="500" y="250" width="50" height="50" /> <!-- PCBM aligned with 4 -->
+              </g>
+          </svg>
+      </div>
+  </body>
+  </html>
